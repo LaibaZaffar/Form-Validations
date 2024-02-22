@@ -2,14 +2,27 @@ body {
   background-color: rgb(194, 243, 243);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-
-
 #SignIN {
   background-image: url("pastel.jpg");
   width: 300px;
   height: 275px;
   padding-top: 10px;
-  padding-left: 150px;
+  padding-left: 100px;
+  padding-right: 150px;
+  padding-bottom: 150px;
+  border: 2px solid black;
+  overflow:hidden;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+#SignUP {
+  background-image: url("pastel.jpg");
+  width: 300px;
+  height: 400px;
+  padding-top: 10px;
+  padding-left: 100px;
   padding-right: 150px;
   padding-bottom: 250px;
   border: 2px solid black;
@@ -19,21 +32,6 @@ body {
   margin-top: 30px;
   border-radius: 20px;
 }
-/* #SignUP {
-  background-image: url("pastel.jpg");
-  width: 300px;
-  height: 450px;
-  padding-top: 10px;
-  padding-left: 150px;
-  padding-right: 150px;
-  padding-bottom: 250px;
-  border: 2px solid black;
-  overflow:hidden;
-  margin-left: 350px;
-  margin-right: 350px;
-  margin-top: 30px;
-  border-radius: 20px;
-} */
 
 h1 {
   width: 100;
@@ -48,20 +46,37 @@ h1 {
     text-align: center;
 }
 
-.input-control {
+.input-box{
   display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin: 20px;
-  margin-left: 0px;
+  flex-direction: row;
+  margin: 20px; 
   width: 300px;
-  padding: 5px;
+  margin-left:0px; 
+  gap: 20px;
+
 }
 
+.input-box input {  
+  border-radius: 20px;
+  border-color: black;
+  width: 150px;
+  margin-left: 0;
+  padding: 5px;
+  display: block;
+
+}
+
+.input-control {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  margin-left: 0px;
+  width: 300px;
+}
 .input-control input {
   border-radius: 20px;
   border-color: black;
-  width: 290px;
+  width: 300px;
   margin-left: 0;
   padding: 5px;
   display: block;
@@ -82,25 +97,23 @@ h1 {
 .input-control .error{
     color: rgb(163, 46, 46);
     font-size: 15px;
-    height: 13px;
+    height: 5px;
 }
 
 .rmr { 
   text-align: left;
   margin-left: 0%;
-  width: 300px;
+  width: 400px;
   padding-top: 0px;
-  padding:10px;
 }
 
 
 .rmr input {
-  width: 25px;
   margin-left: 0;
   accent-color:rgb(85, 213, 191) ;
 }
 
-#SignIN button#submitButton {
+#SignIN button#SignINsubmit {
   width: 200px;
   padding: 10px;
   margin-top: 50px;
@@ -109,10 +122,18 @@ h1 {
   border-radius: 20px;
   background-color: rgb(170, 214, 229);
 }
-#SignIN button#toggleButton {
+#SignUP button#SignUPsubmit {
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 50px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(170, 214, 229);
+}
+ button#toggleButton {
   border-color:white ;
   background-color: white;
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 200;
 }
+

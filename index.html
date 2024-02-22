@@ -15,89 +15,80 @@
             <h1>SignIn</h1>
             <p id="p1">Please enter your username and password!</p>
             <div class="input-control">
-                <label for="username">*UserName:</label>
-                <input type="text" id="username" name="username">
+                <label for="username"><b>*UserName:</b>&nbsp;&nbsp;</label>
+                <input type="text" id="username" placeholder="Type here..">
                 <div class="error"></div>
             </div>
 
             <div class="input-control">
-                <label for="password">*Password:</label>
-                <input type="password" id="password" name="password">
+                <label for="password"><b>*Password:</b>&nbsp;&nbsp;</label>
+                <input type="password" id="password" placeholder="Type here.." >
                 <div class="error"></div>
             </div>
 
             <div class="rmr">
                 <input type="checkbox" name="showPasss" id="showPass">
-                <label for="showPass">Remember Me &nbsp;&nbsp;
-                <b style="text-decoration:double underline;">Forgot Password?</b></label>
+                <label for="showPass"><b>Remember Me</b> 
+                <label for="forgot" style="margin-left: 70px;text-decoration:double underline;"><b>Forgot Password?</b> 
+
             </div>
 
-           <span style="margin: 50px;">
-            <label for="toggleButton" >Don't have any accout?</label>
-            <button type="submit" id="toggleButton"> <b>SignUp</b></button>
-                
-           </span>
-        
-            
-            <button type="submit" id="submitButton">Sign IN</button>
-        </form>
+            <button type="submit" id="SignINsubmit">Sign IN</button>
 
-        <!-- <form id="SignUP" action="/">
+            <div style="margin-top: 30px; text-align:center">
+                <label for="toggleButton" >Do not have an accout?</label>
+                <button type="button" id="toggleButton" > <b>SignUP</b></button>                 
+            </div> 
+        </form>
+        <form id="SignUP" action="/">
             <h1>SignUP</h1>
 
-            <div class="input-control">
-                <label for="fname">*First Name:</label>
-                <input type="text" id="fname" name="fname">
+            <div class="input-box">
+                <input type="text" id="fname" placeholder="*First Name">
+                <input type="text" id="lname" placeholder="*Last Name">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-box">
+                <input type="tel" id="contact" placeholder="*Contact">
+                <input type="text" id="address" placeholder="*Address">
                 <div class="error"></div>
             </div>
 
             <div class="input-control">
-                <label for="lname">*Last Name:</label>
-                <input type="text" id="lname" name="lname">
+                <input type="number" id="age" placeholder="*Age">
                 <div class="error"></div>
             </div>
 
             <div class="input-control">
-                <label for="contact">*Contact:</label>
-                <input type="tel" id="contact" name="contact">
-                <div class="error"></div>
-            </div>
-            <div class="input-control">
-                <label for="age">*Age:</label>
-                <input type="date" id="age" name="age">
-                <div class="error"></div>
-            </div>
-            <div class="input-control">
-                <label for="address">*Address:</label>
-                <input type="text" id="address" name="address">
+                <input type="email" id="email" placeholder="*Email">
                 <div class="error"></div>
             </div>
 
             <div class="input-control">
-                <label for="email">*Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="text" id="username1" placeholder="*UserName">
                 <div class="error"></div>
             </div>
 
             <div class="input-control">
-                <label for="username">*UserName:</label>
-                <input type="text" id="username" name="username">
+                <input type="password" id="password1" placeholder="*Password">
                 <div class="error"></div>
             </div>
 
-            <div class="input-control">
-                <label for="password">*Password:</label>
-                <input type="password" id="password" name="password">
-                <div class="error"></div>
-            </div>
-
-               <div class="rmr">
+            <div class="rmr">
                 <input type="checkbox" name="showPasss" id="showPass">
-                <label for="showPass">Remember Me</label>
+                <label for="showPass"><b>Remember Me</b></label>
+            </div>
+
+            <button type="submit" id="SignUPsubmit">Sign UP</button>
+
+            <div style="margin-top: 30px; text-align:center">
+                <label for="toggleButton" >Already have an accout?</label>
+                <button type="button" id="toggleButton1" > <b>SignIN</b></button>                 
             </div> 
-           <p id="p2" >Forgot Password? </p> -->
-           <!-- <button type="submit" id="submitButton">Sign IN</button>
-        </form>  -->
+
+        </form>
     </div>
 </body>
+
 </html>
